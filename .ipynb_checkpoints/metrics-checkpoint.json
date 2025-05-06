@@ -1,0 +1,6 @@
+{
+    "Model_scratch": {
+        "val_accuracy": 0.7774,
+        "val_f1_score": 0.761
+    }
+}
