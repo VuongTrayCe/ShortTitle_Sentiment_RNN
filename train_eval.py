@@ -40,7 +40,7 @@ def train_and_evaluate_model(model, train_loader, test_loader, model_name="model
 
         # avg_epoch_loss = total_train_loss / len(train_loader)
         train_accuracy = accuracy_score(train_labels_all, train_preds)
-        train_f1 = f1_score(train_labels_all, train_preds, average='weighted')
+        train_f1 = f1_score(train_labels_all, train_preds, average='macro')
 
         # --- Validation ---
         model.eval()
@@ -63,7 +63,7 @@ def train_and_evaluate_model(model, train_loader, test_loader, model_name="model
 
         # avg_val_loss = total_val_loss / len(test_loader)
         val_accuracy = accuracy_score(val_labels_all, val_preds)
-        val_f1 = f1_score(val_labels_all, val_preds, average='weighted')
+        val_f1 = f1_score(val_labels_all, val_preds, average='macro')
 
         # Print mỗi 10 epoch hoặc epoch đầu tiên
         if (epoch + 1) % 10 == 0 or epoch == 0:

@@ -1,10 +1,10 @@
 {
     "Model_scratch": {
-        "val_accuracy": 0.8056,
-        "val_f1_score": 0.7945
+        "val_accuracy": 0.7658,
+        "val_f1_score": 0.7568
     },
     "Model_pretrained": {
-        "val_accuracy": 0.8207,
-        "val_f1_score": 0.8051
+        "val_accuracy": 0.7747,
+        "val_f1_score": 0.7675
     }
 }
